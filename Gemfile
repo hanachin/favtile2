@@ -46,3 +46,7 @@ end
 
 gem 'omniauth-twitter'
 gem 'settingslogic'
+
+group :test do
+  gem 'rspec-rails'
+end
