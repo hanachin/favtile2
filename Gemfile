@@ -51,4 +51,5 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_girl'
   gem 'guard-rspec'
+  gem 'spring'
 end
