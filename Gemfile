@@ -50,4 +50,5 @@ gem 'settingslogic'
 group :test do
   gem 'rspec-rails'
   gem 'factory_girl'
+  gem 'guard-rspec'
 end
