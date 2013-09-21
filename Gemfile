@@ -53,4 +53,5 @@ group :test do
   gem 'guard-rspec'
   gem 'spring'
   gem 'listen'
+  gem 'growl'
 end
