@@ -175,6 +175,7 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 1.2)
   jquery-rails
+  listen
   omniauth-twitter
   rails
   rspec-rails
