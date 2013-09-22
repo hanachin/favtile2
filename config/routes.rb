@@ -39,7 +39,7 @@ Favtile::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
@@ -53,4 +53,7 @@ Favtile::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get '/auth/twitter/callback', to: 'auths#twitter'
+  get '/auth/failure',          to: 'auths#failure'
 end
