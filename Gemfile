@@ -47,6 +47,10 @@ end
 gem 'omniauth-twitter'
 gem 'settingslogic'
 
+group :development, :test do
+  gem 'dotenv-rails'
+end
+
 group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
