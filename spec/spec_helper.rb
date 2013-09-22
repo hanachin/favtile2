@@ -13,8 +13,10 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 # Spring config
-Spring.watch_method = :listen
-Spring.watch "spec/factories"
+if defined?(Spring)
+  Spring.watch_method = :listen
+  Spring.watch "spec/factories"
+end
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
