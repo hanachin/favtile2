@@ -183,6 +183,7 @@ DEPENDENCIES
   jquery-rails
   listen
   omniauth-twitter
+  pry
   rails
   rspec-rails
   sass-rails (~> 4.0.0)

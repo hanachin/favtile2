@@ -48,6 +48,7 @@ gem 'omniauth-twitter'
 gem 'settingslogic'
 
 group :development, :test do
+  gem 'pry'
   gem 'dotenv-rails'
 end
 
