@@ -1,6 +1,6 @@
 class AuthsController < ApplicationController
   def twitter
-    render nothing: true
+    render json: { env: request.env['omniauth.auth'], params: params }
   end
 
   def failure
