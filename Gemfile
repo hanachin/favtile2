@@ -50,13 +50,13 @@ gem 'pry'
 
 group :development, :test do
   gem 'dotenv-rails'
+  gem 'spring'
+  gem 'listen'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'guard-rspec'
-  gem 'spring'
-  gem 'listen'
   gem 'growl'
 end
