@@ -52,6 +52,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'spring'
   gem 'listen'
+  gem 'database_cleaner'
 end
 
 group :test do
