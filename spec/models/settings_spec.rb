@@ -4,8 +4,17 @@ describe 'Settings' do
   subject { Settings }
 
   # default values
-  its('twitter.consumer_key')    { should eq 'YOUR_TWITTER_CONSUMER_KEY' }
-  its('twitter.consumer_secret') { should eq 'YOUR_TWITTER_CONSUMER_SECRET' }
+  context 'environment variable is not exists' do
+    let(:env) { {} }
+
+    before do
+      stub_const('::ENV', env)
+      Settings.reload!
+    end
+
+    its('twitter.consumer_key')    { should eq 'YOUR_TWITTER_CONSUMER_KEY' }
+    its('twitter.consumer_secret') { should eq 'YOUR_TWITTER_CONSUMER_SECRET' }
+  end
 
   # reset Settings if ENV is stubbed
   before do
