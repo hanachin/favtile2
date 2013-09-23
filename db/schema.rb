@@ -11,11 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130923063854) do
+ActiveRecord::Schema.define(version: 20130923064816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "providers", force: true do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.hstore   "credentials"
+    t.hstore   "raw_info"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "providers", ["user_id"], name: "index_providers_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
