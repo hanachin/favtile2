@@ -56,4 +56,6 @@ Favtile::Application.routes.draw do
 
   get '/auth/twitter/callback', to: 'auths#twitter'
   get '/auth/failure',          to: 'auths#failure'
+
+  resources :users, only: :show
 end
