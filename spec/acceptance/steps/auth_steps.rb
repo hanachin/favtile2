@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-step ':name としてTwitter認証に成功する' do |name|
+step ':twitter_name としてTwitter認証に成功する' do |twitter_name|
   OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
     uid:         'uid',
     provider:    'twitter',
     credentials: { token: 'token', secret: 'secret' },
-    raw_info:    { name: name },
-    info:        { nickname: name }
+    raw_info:    { name: twitter_name },
+    info:        { nickname: twitter_name }
   })
 end
