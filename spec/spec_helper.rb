@@ -6,8 +6,7 @@ require 'rspec/autorun'
 require 'database_cleaner'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
-
-Capybara.javascript_driver = :poltergeist
+require 'turnip/capybara'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -23,6 +22,8 @@ if defined?(Spring)
   Spring.watch_method = :listen
   Spring.watch "spec/factories"
 end
+
+Capybara.javascript_driver = :poltergeist
 
 RSpec.configure do |config|
   # include matchers
