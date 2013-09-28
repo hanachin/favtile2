@@ -30,7 +30,7 @@ describe AuthsController do
         get :twitter
       end
 
-      it { should redirect_to user_path id: auth[:info][:nickname] }
+      it { should redirect_to twitter_user_path id: auth[:info][:nickname] }
     end
 
     context 'when user name is changed' do
@@ -40,7 +40,7 @@ describe AuthsController do
         get :twitter
       end
 
-      it { should redirect_to user_path id: auth[:info][:nickname] }
+      it { should redirect_to twitter_user_path id: auth[:info][:nickname] }
     end
   end
 

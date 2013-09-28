@@ -1,7 +1,7 @@
 class AuthsController < ApplicationController
   def twitter
     @user = User.find_or_create_by_omniauth!(omniauth_hash)
-    redirect_to user_path id: omniauth_hash[:info][:nickname]
+    redirect_to twitter_user_path id: omniauth_hash[:info][:nickname]
   end
 
   def failure
