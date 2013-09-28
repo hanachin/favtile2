@@ -54,6 +54,8 @@ gem 'omniauth-twitter'
 gem 'settingslogic'
 gem 'pry'
 
+gem 'twitter', '~>5.0.0.rc'
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'spring'
