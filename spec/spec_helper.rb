@@ -24,6 +24,7 @@ if defined?(Spring)
 end
 
 Capybara.javascript_driver = :poltergeist
+OmniAuth.config.test_mode  = true
 
 RSpec.configure do |config|
   # include matchers

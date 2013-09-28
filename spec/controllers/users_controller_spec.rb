@@ -2,6 +2,10 @@ require 'spec_helper'
 
 describe UsersController do
   describe 'GET #index' do
-    pending
+    before do
+      get :index
+    end
+
+    it { should respond_with :success }
   end
 end
