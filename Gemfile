@@ -64,6 +64,7 @@ end
 
 group :test do
   gem 'rspec-rails'
+  gem 'turnip'
   gem 'capybara'
   gem 'poltergeist'
   gem 'shoulda-matchers'
