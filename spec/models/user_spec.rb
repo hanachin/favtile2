@@ -26,6 +26,15 @@ describe User do
       specify do
         expect(subject.call).to eq provider.user
       end
+
+      context 'when user name is changed' do
+        let(:auth) {
+          super().merge(raw_info: { name: ';) xoxo' }, info: { nickname: 'john_doe ;)' })
+        }
+
+        it { should_not change(User, :count) }
+        it { should_not change(Provider, :count) }
+      end
     end
 
     context 'if twitter authentication not exists in database' do
