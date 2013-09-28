@@ -14,4 +14,13 @@ class User < ActiveRecord::Base
       end
     end
   end
+
+  def access_token
+    provider.credentials['token']
+  end
+
+
+  def access_token_secret
+    provider.credentials['secret']
+  end
 end

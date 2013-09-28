@@ -78,4 +78,22 @@ describe User do
       end
     end
   end
+
+  describe '#access_token' do
+    let(:user) { create(:user) }
+    subject { user }
+
+    before { user.reload }
+
+    its(:access_token) { should eq user.provider.credentials['token'] }
+  end
+
+  describe '#access_token_secret' do
+    let(:user) { create(:user) }
+    subject { user }
+
+    before { user.reload }
+
+    its(:access_token_secret) { should eq user.provider.credentials['secret'] }
+  end
 end
