@@ -64,5 +64,12 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
+  config.around(:each, type: :feature) do |example|
+    DatabaseCleaner.strategy = :truncation
+    example.run
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
   config.before(:suite) { FactoryGirl.reload }
 end
