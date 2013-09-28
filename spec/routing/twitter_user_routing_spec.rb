@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'routes for Users' do
+describe 'routes for TwitterUsers' do
   it 'routes /:id to the twitter users controller' do
     { get: '/hanachin' }.should route_to(controller: 'twitter_users', action: 'show', id: 'hanachin')
   end
