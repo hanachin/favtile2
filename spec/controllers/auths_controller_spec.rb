@@ -31,6 +31,11 @@ describe AuthsController do
       end
 
       it { should redirect_to twitter_user_path id: auth[:info][:nickname] }
+
+      specify 'set user session id' do
+        expect(session[:user_id]).to eq user.id
+        expect(cookies.signed[:secure_user_id]).to eq ApplicationController.new.secure_value(user.id)
+      end
     end
 
     context 'when user name is changed' do
