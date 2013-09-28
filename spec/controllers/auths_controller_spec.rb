@@ -16,8 +16,8 @@ describe AuthsController do
     let(:user) { create(:user, name: auth[:info][:nickname]) }
 
     before do
-      controller.stub!(:omniauth_hash) { auth }
-      User.stub!(:find_or_create_by_omniauth!).with(auth) { user }
+      controller.stub(:omniauth_hash) { auth }
+      User.stub(:find_or_create_by_omniauth!).with(auth) { user }
     end
 
     it 'find or create user by auth' do
