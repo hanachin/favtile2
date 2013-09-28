@@ -82,9 +82,6 @@ describe User do
   describe '#access_token' do
     let(:user) { create(:user) }
     subject { user }
-
-    before { user.reload }
-
     its(:access_token) { should eq user.provider.credentials['token'] }
   end
 
