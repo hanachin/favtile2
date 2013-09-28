@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
 
   def signin(user)
     session[:user_id] = user.id
-    cookies.signed[:secure_user_id] = { secure: true, value: secure_value(user.id) }
+    cookies.signed[:secure_user_id] = { value: secure_value(user.id) }
   end
 
   # cf. http://railscasts.com/episodes/356-dangers-of-session-hijacking
