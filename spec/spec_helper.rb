@@ -22,6 +22,7 @@ end
 RSpec.configure do |config|
   # include matchers
   config.include FactoryGirl::Syntax::Methods
+  config.include SigninUtilities
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
