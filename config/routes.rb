@@ -54,6 +54,7 @@ Favtile::Application.routes.draw do
   #     resources :products
   #   end
 
+  get '/signin', to: redirect('/auth/twitter')
   get '/auth/twitter/callback', to: 'auths#twitter'
   get '/auth/failure',          to: 'auths#failure'
 
