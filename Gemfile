@@ -59,6 +59,7 @@ group :development, :test do
   gem 'spring'
   gem 'listen'
   gem 'database_cleaner'
+  gem 'erb2haml' # rake task haml:convert_erbs, haml:replace_erbs
 end
 
 group :test do
