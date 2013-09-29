@@ -10,7 +10,7 @@ class TwitterService
 
   def client; @client; end
 
-  def favorites(twitter_name, options)
+  def favorites(twitter_name, options = {})
     client.favorites(twitter_name, options)
   end
 end
