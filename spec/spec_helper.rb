@@ -7,6 +7,7 @@ require 'database_cleaner'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 require 'turnip/capybara'
+require 'webmock/rspec'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -25,6 +26,11 @@ end
 
 Capybara.javascript_driver = :poltergeist
 OmniAuth.config.test_mode  = true
+WebMock.disable_net_connect!(allow_localhost: true)
+
+def fixture(path)
+  File.new("#{Rails.root}/spec/fixtures/#{path}")
+end
 
 RSpec.configure do |config|
   # include matchers
