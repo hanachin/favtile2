@@ -56,12 +56,14 @@ gem 'pry'
 
 gem 'twitter', '~>5.0.0.rc'
 
+group :development do
+  gem 'erb2haml' # rake task haml:convert_erbs, haml:replace_erbs
+end
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'spring'
   gem 'listen'
-  gem 'database_cleaner'
-  gem 'erb2haml' # rake task haml:convert_erbs, haml:replace_erbs
 end
 
 group :test do
@@ -74,4 +76,5 @@ group :test do
   gem 'webmock'
   gem 'guard-rspec'
   gem 'growl'
+  gem 'database_cleaner'
 end
