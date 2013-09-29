@@ -16,7 +16,6 @@
   ],
   "dependencies": {
     "underscore":    "*",
-    "backbone":      "*",
-    "handlebars.js": "*"
+    "backbone":      "*"
   }
 }
