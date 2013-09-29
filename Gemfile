@@ -64,6 +64,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'spring'
   gem 'listen'
+  gem 'webmock'
 end
 
 group :test do
@@ -73,7 +74,6 @@ group :test do
   gem 'poltergeist'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
-  gem 'webmock'
   gem 'guard-rspec'
   gem 'growl'
   gem 'database_cleaner'
