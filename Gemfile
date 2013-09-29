@@ -71,6 +71,7 @@ group :test do
   gem 'poltergeist'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'webmock'
   gem 'guard-rspec'
   gem 'growl'
 end
