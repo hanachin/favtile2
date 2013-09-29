@@ -8,6 +8,7 @@
   Favtileでお気に入りを眺めるためには、Twitter認証が必要だ。
 
   シナリオ: トップページを表示し、サインインのリンクを踏んで、Twitter認証をし、Favtileにサインインする
+    前提 hanachin_ はTwitterでツイートをふぁぼった
     前提 hanachin_ としてTwitter認証に成功する
     もし トップページを表示する
     もし "Signin with Twitter" をクリックする
