@@ -17,3 +17,4 @@
 .env
 
 app/assets/components
+spec/fixtures/hanachin.json
