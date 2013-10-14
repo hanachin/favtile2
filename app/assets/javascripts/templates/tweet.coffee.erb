@@ -16,7 +16,7 @@ App.Templates.tweet = _.template """
     |
     <span class="tweet-toolbar-user">
       <a href="http://twitter.com/<%%- user.screen_name %>" target="_blank">
-        <img src="<%= 'user.png' %>" alt="Jump to twitter user page" />
+        <img src="<%= asset_path 'user.png' %>" alt="Jump to twitter user page" />
         <span>user</span>
       </a>
     </span>
