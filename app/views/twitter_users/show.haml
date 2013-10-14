@@ -1,1 +1,3 @@
-= @favorites.map{|t| t.text}.join
+- content_for(:bootstrap) do
+  :coffee
+    App.Bootstraps.favorites = #{@favorites.to_json.html_safe}

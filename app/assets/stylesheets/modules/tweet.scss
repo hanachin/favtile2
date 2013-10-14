@@ -1,0 +1,123 @@
+.tweet {
+  position: relative;
+
+  width: 210px;
+  margin:  5px;
+  padding: 5px 5px 20px 5px;
+
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 3px black;
+
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+
+// links
+.tweet a {
+  color: #0084B4;
+  text-decoration: none;
+
+  &:hover  {
+    text-decoration: underline;
+  }
+
+  &.tweet-screen-name {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.tweet:hover a {
+  color: #0084B4;
+}
+
+// sub modules
+.tweet-icon {
+  float: left;
+
+  margin-top:    3px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.tweet-content {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+// toolbar
+.tweet-toolbar {
+  display:  none;
+  position: absolute;
+  bottom:   5px;
+  left:    10px;
+  padding:  0px 3px;
+
+  border: 1px solid #8c8c8c;
+  border-radius: 3px;
+
+  background: -moz-linear-gradient(
+    top,
+    #f6f6f6 0%,
+    #f3f3f3 25%,
+    #f3f3f3);
+  background: -webkit-gradient(
+    linear, left top, left bottom, 
+    from(#f6f6f6),
+    color-stop(0.25, #f3f3f3),
+    to(#f3f3f3));
+
+  box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px -1px 0px rgba(255,255,255,0.7);
+
+  color: #666666;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-shadow: 0px -1px 1px rgba(228,228,228,0.2), 0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.tweet:hover .tweet-toolbar {
+  /* あとでふぁぼれるようにしてからenableにする
+    display: block;
+  */
+}
+
+// toolbar
+.tweet-toolbar-fav > span, .tweet-toolbar-retweet > span, .tweet-toolbar-user > span {
+  margin-left: 3px;
+}
+
+// pointer :)
+.tweet-toolbar-retweet:hover, .tweet-toolbar-fav:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+// rt/unrt
+.tweet.is-retweeted .tweet-rt-btn, .tweet-unrt-btn {
+  display: none;
+}
+.tweet.is-retweeted .tweet-unrt-btn {
+  display: inline;
+}
+
+// fav/unfav
+.tweet.is-favorited .tweet-fav-btn, .tweet-unfav-btn {
+  display: none;
+}
+.tweet.is-favorited .tweet-unfav-btn {
+  display: inline;
+}
+
+// footer
+.tweet-footer {
+  text-align: right;
+  font-size: x-small;
+}
+

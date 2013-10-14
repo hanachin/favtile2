@@ -1,0 +1,12 @@
+@App =
+  Bootstraps:  {}
+  Routers:     {}
+  Views:       {}
+  Models:      {}
+  Collections: {}
+  Templates:   {}
+  Services:    {}
+  routers:     {}
+  views:       {}
+  models:      {}
+  collections: {}

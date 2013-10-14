@@ -1,0 +1,26 @@
+#header {
+  position: fixed;
+  top:      0px;
+  margin:   0px;
+  height:  67px;
+  width:   100%;
+  z-index:   10;
+
+  color: white;
+
+  text-size:  20px;
+  text-align: center;
+
+  background: rgba(0, 0, 0,   1);
+  background: rgba(0, 0, 0, 0.8);
+
+  box-shadow: 0px 0px 5px #333;
+}
+
+#footer {
+  text-align: right;
+}
+
+#app {
+  margin: 80px 0px 0px 0px;
+}

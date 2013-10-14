@@ -15,7 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "underscore":    "*",
-    "backbone":      "*"
+    "underscore":     "*",
+    "backbone":       "*",
+    "masonry":        "v2.1.08",
+    "embedly-jquery": "*",
+    "imagesloaded-packaged": "*"
   }
 }

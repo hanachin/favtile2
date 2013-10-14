@@ -1,0 +1,22 @@
+.favtile-logo {
+    margin: 10px auto auto auto;
+}
+
+.favtile-screenshot {
+    width: 100%;
+}
+
+.favtile-description {
+  /* background-attachment: fixed, fixed; */
+  /* background-repeat: no-repeat, no-repeat; */
+  /* background-color: rgba(255, 255, 255, 0.8), rgba(0,0,0,0); */
+  /* background-image: url('/top_background.png'), url('/screen01.png'); */
+  /* background-position: left top, right top; */
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.favtile-description.is-signed-in {
+  display: none;
+}

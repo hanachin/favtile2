@@ -1,0 +1,23 @@
+@import 'colors';
+
+.session {
+  top:    37px;
+  right: 200px;
+  color:  $session-color;
+  z-index:  11;
+  position: fixed;
+}
+
+// hide signin button if signed in
+.session-signin.is-signed-in {
+  display: none;
+}
+
+// hide signin button if not signed in
+.session-signout {
+  display: none;
+}
+
+.session-signout.is-signed-in {
+  display:  inline;
+}

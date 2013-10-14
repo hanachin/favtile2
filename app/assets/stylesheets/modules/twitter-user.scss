@@ -1,0 +1,77 @@
+@import 'compass/css3/images';
+
+.twitter-user-icon {
+  position: fixed;
+  top:      10px;
+  left:     10px;
+  width:    48px;
+  height:   48px;
+  z-index:    11;
+
+  border-radius: 5px;
+}
+
+.twitter-user-screen-name-prefix {
+  position:fixed;
+  top:   25px;
+  left:  63px;
+  z-index: 20;
+
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.twitter-user-screen-name {
+  position: fixed;
+  top:   25px;
+  left:  93px;
+  width: 100px;
+
+  font-size: 12px;
+}
+
+
+.twitter-user-submit-btn {
+  position: fixed;
+  top:   26px;
+  left: 210px;
+  width: 80px;
+}
+
+.twitter-user-submit-btn:hover {
+  opacity: 0.9;
+  color: #202020;
+}  
+
+.twitter-user-submit-btn, .twitter-user-screen-name {
+  padding: 5px;
+  z-index: 105;
+}
+
+.twitter-user-submit-btn {
+  border-radius: 10px;
+  border: 1px solid #949494;
+
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #ebebeb 50%,
+    #dbdbdb 50%,
+    #b5b5b5);
+  background: -webkit-gradient(
+    linear, left top, left bottom, 
+    from(#ffffff),
+    color-stop(0.50, #ebebeb),
+    color-stop(0.50, #dbdbdb),
+    to(#b5b5b5));
+  box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+
+  color: #050505;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-shadow:
+    0px -1px 0px rgba(000,000,000,0.2),
+    0px 1px 0px rgba(255,255,255,1);
+}

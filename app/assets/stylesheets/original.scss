@@ -1,0 +1,86 @@
+// あとでいろいろ直したいのでとりあえず全部コメントアウト!
+/* 
+// http://kojika17.com/2011/04/floatclearfix.php
+.clearfix {zoom:1;}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#favs footer.favs_footer {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.tweet .status {
+    color:#3C3940;
+}
+
+
+.tweet .media {
+    width: 150px;
+    height:150px;
+}
+
+#error {
+    color: white;
+    width: 200px;
+    margin: 80px auto 0px auto;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.loading {
+    display: none;
+    background: black;
+    border-radius: 10px;
+    padding: 10px 15px 10px 10px;
+}
+
+.need-signin {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 60px 0px 0px 0px;
+    z-index: 100;
+    background: rgb(255, 255, 255);
+    background: url('/top_background.png'), rgba(255, 255, 255, 0.8), right top, no-repeat;
+}
+
+.social_buttons {
+    position:absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.fb-like {
+    top: -3px;
+}
+
+.twitter-share-button {
+    margin-top: 4px;
+}
+
+.favs_footer p {
+    color: white;
+    width: 200px;
+    margin: 80px auto 0px auto;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.fb_edge_comment_widget {
+    top: 66px !important;
+    left: -270px !important;
+}
+
+.media, .embed .description, .embed .provider {
+    display:none !important;
+}
+*/
