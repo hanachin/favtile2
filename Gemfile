@@ -5,6 +5,9 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 
+# app server
+gem 'unicorn'
+
 # Use pg as the database for Active Record
 gem 'pg'
 
