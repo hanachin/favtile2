@@ -56,6 +56,10 @@ gem 'pry'
 
 gem 'twitter', '~>5.0.0.rc'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development do
   gem 'erb2haml' # rake task haml:convert_erbs, haml:replace_erbs
 end
